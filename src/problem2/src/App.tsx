@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useMemo } from "react";
-import "./fonts.css";
+import { useEffect, useMemo, useState } from "react";
 import "./App.css";
-import pricesData from "./sources/prices.json";
 import { CurrencyDropdown } from "./components/CurrencyDropdown";
+import "./fonts.css";
 import type { PriceData } from "./interfaces";
+import pricesData from "./sources/prices.json";
 
 function App() {
   const [fromCurrency, setFromCurrency] = useState<string>("ETH");
@@ -121,7 +121,9 @@ function App() {
 
     // Check if amount exceeds available balance
     if (numericAmount > fromBalance) {
-      setError(`Insufficient balance. Maximum available: ${fromBalance} ${fromCurrency}`);
+      setError(
+        `Insufficient balance. Maximum available: ${fromBalance} ${fromCurrency}`
+      );
       return;
     }
 
@@ -130,7 +132,14 @@ function App() {
       setToAmount(formatNumber(converted));
     }
     setError("");
-  }, [fromAmount, fromCurrency, toCurrency, currencies, isFromInput, fromBalance]);
+  }, [
+    fromAmount,
+    fromCurrency,
+    toCurrency,
+    currencies,
+    isFromInput,
+    fromBalance,
+  ]);
 
   // Handle amount change
   const handleFromAmountChange = (value: string) => {
