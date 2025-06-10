@@ -8,7 +8,7 @@
 
 ## 📋 Project Overview
 
-This repository contains solutions to the 99Tech code challenge by [Thanh Le](thanhlx1298@gmail.com). Each problem is organized in its own directory with specific setup instructions.
+This repository contains solutions to the 99Tech code challenge by [Thanh Le](mailto:thanhlx1298@gmail.com). Each problem is organized in its own directory with specific setup instructions.
 
 ## 🚀 Quick Start Guide
 
