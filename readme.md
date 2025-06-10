@@ -57,9 +57,36 @@ pnpm build
 - Responsive design
 - Error handling
 
-### Problem 3 - [Not Yet Implemented]
+### Problem 3 - Code Refactoring (React TypeScript)
 **Location**: `src/problem3/`  
-**Status**: Pending implementation
+**Type**: React TypeScript refactoring exercise  
+**Description**: Component optimization and code quality improvements
+
+```bash
+# Navigate to problem 3
+cd src/problem3
+
+# View the refactored component
+cat main.tsx
+```
+
+**Refactoring Details:**
+To see the detailed refactoring changes and improvements made to the `WalletPage` component, check commit:
+```
+14b08b2d55c4d40dc0dcf476b08084bdbd835327
+```
+
+**View the refactoring commit:**
+```bash
+git show 14b08b2d55c4d40dc0dcf476b08084bdbd835327
+```
+
+**Key Improvements:**
+- Performance optimization (moved utility functions outside component scope)
+- Cleaned up `useMemo` dependencies
+- Removed unused variables and redundant calculations
+- Improved TypeScript usage and type consistency
+- Simplified filtering and sorting logic
 
 ---
 
